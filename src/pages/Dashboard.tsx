@@ -4,7 +4,6 @@ import NotFound from "./NotFound";
 import Users from "@/tabs/Users/Users";
 import TabLink from "@/components/dashboard/TabLink";
 import Revenue from "@/tabs/Revenue/Revenue";
-import Content from "@/tabs/Content/Content";
 import Streams from "@/tabs/Streams/Streams";
 
 const Dashboard = () => {
