@@ -93,27 +93,17 @@ export const DataTable = ({ data: initialData }: DataTableProps) => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            <AnimatePresence>
-              {sortedData.map((stream) => (
-                <motion.tr
-                  key={stream.id}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="hover:bg-muted/50 transition-colors"
-                >
-                  <TableCell className="font-medium">
-                    {stream.songName}
-                  </TableCell>
-                  <TableCell>{stream.artist}</TableCell>
-                  <TableCell>{stream.dateStreamed}</TableCell>
-                  <TableCell>{stream.streamCount.toLocaleString()}</TableCell>
-                  <TableCell className="text-muted-foreground">
-                    {stream.userId}
-                  </TableCell>
-                </motion.tr>
-              ))}
-            </AnimatePresence>
+            {sortedData.map((stream) => (
+              <tr className="hover:bg-muted/50 transition-colors">
+                <TableCell className="font-medium">{stream.songName}</TableCell>
+                <TableCell>{stream.artist}</TableCell>
+                <TableCell>{stream.dateStreamed}</TableCell>
+                <TableCell>{stream.streamCount.toLocaleString()}</TableCell>
+                <TableCell className="text-muted-foreground">
+                  {stream.userId}
+                </TableCell>
+              </tr>
+            ))}
           </TableBody>
         </Table>
       </div>

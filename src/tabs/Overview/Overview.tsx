@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import OverviewMetrics from "@/tabs/Overview/components/Metric/OverviewMetrics";
 import ChartHolder from "@/tabs/Overview/components/Chart/ChartHolder";
 import RecentStreams from "@/tabs/Overview/components/RecentStreams/RecentStreams";

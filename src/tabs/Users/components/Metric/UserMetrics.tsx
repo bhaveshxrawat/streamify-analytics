@@ -9,7 +9,7 @@ const mockMetrics = {
 
 const UserMetrics = () => {
   return (
-    <GridWrapper className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    <GridWrapper className="grid-cols-[repeat(auto-fit,_minmax(15.625rem,_1fr))] gap-6 mb-8">
       <UserMetricCard
         title="Monthly Active Users"
         value={mockMetrics.monthlyActiveUsers}
