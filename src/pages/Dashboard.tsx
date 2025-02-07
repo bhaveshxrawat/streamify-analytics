@@ -15,7 +15,6 @@ const Dashboard = () => {
     overview: <Overview />,
     users: <Users />,
     revenue: <Revenue />,
-    content: <Content />,
     streams: <Streams />,
     // Add more tabs here
   } as const;
